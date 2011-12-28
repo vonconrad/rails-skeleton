@@ -2,7 +2,7 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
-require File.expand_path(File.dirname(__FILE__) + "/blueprints")
+require 'database_cleaner'
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
