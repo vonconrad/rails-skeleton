@@ -7,6 +7,7 @@ require 'database_cleaner'
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
+  config.fail_fast = true
   config.mock_with :rspec
 
   config.before(:suite) do
