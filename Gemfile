@@ -1,35 +1,57 @@
 source 'https://rubygems.org'
 
+# Rails
 gem 'rails', '3.2.0.rc1'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+# Models
+gem 'pg'
+gem 'squeel'
+# gem 'ransack'
+gem 'valium'
 
-gem 'sqlite3'
+# Controllers
+gem 'inherited_resources'
 
+# Views/assets
+gem 'haml'
+gem 'haml-rails'
+gem 'jquery-rails'
+# gem 'will_paginate'
 
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.0'
   gem 'coffee-rails', '~> 3.2.0'
-
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier',     '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+# Authentication
+# gem 'devise'
+# gem 'devise_invitable'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+# Performance
+# gem 'rpm_contrib'
+# gem 'newrelic_rpm'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+# Remote/parsing
+# gem 'cabinet'
+# gem 'httparty'
+# gem 'nokogiri'
 
-# Use unicorn as the web server
-# gem 'unicorn'
+# Queuing
+# gem 'resque'
 
-# Deploy with Capistrano
-# gem 'capistrano'
+# Testing
+group :test, :development do
+  gem 'rspec-rails', '~> 2.6'
+  # gem 'resque_spec'
+  # gem 'cucumber-rails'
+  gem 'fuubar'
+  gem 'machinist'
+  gem 'forgery'
+  gem 'database_cleaner'
+  # gem 'timecop'
+  # gem 'timer'
+end
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+# Debugging
+gem 'ruby-debug19', :require => 'ruby-debug'
