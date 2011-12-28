@@ -68,7 +68,7 @@ GEM
       railties (>= 3.2.0.beta, < 5.0)
       thor (~> 0.14)
     json (1.6.4)
-    linecache19 (0.5.12)
+    linecache19 (0.5.13)
       ruby_core_source (>= 0.1.4)
     machinist (1.0.6)
     mail (2.3.0)
@@ -124,7 +124,7 @@ GEM
       activesupport (~> 3.0)
       railties (~> 3.0)
       rspec (~> 2.7.0)
-    ruby-debug-base19 (0.11.25)
+    ruby-debug-base19 (0.11.26)
       columnize (>= 0.3.1)
       linecache19 (>= 0.5.11)
       ruby_core_source (>= 0.1.4)
@@ -172,10 +172,12 @@ DEPENDENCIES
   haml-rails
   inherited_resources
   jquery-rails
+  linecache19 (~> 0.5.13)
   machinist
   pg
   rails (= 3.2.0.rc1)
   rspec-rails (~> 2.6)
+  ruby-debug-base19 (~> 0.11.26)
   ruby-debug19
   sass-rails (~> 3.2.0)
   squeel
